@@ -10,10 +10,10 @@ Hosted here: **[https://forms-prototypes.herokuapp.com/](https://forms-prototype
 
 ## File locations
 
-Custom routes: [/app/routes.js](https://github.com/alphagov/forms-prototypes/blob/main/app/routes.js)
+Custom routes: [/app/routes.js](https://github.com/govuk-forms/forms-prototypes/blob/main/app/routes.js)
 
-Session data defaults: [/app/data/session-data-defaults.js](https://github.com/alphagov/forms-prototypes/blob/main/app/data/session-data-defaults.js)
+Session data defaults: [/app/data/session-data-defaults.js](https://github.com/govuk-forms/forms-prototypes/blob/main/app/data/session-data-defaults.js)
 
-Custom Sass: [/app/assets/sass/application.scss](https://github.com/alphagov/forms-prototypes/blob/main/app/assets/sass/application.scss)
+Custom Sass: [/app/assets/sass/application.scss](https://github.com/govuk-forms/forms-prototypes/blob/main/app/assets/sass/application.scss)
 
-Form designer views: [/app/views/form-designer](https://github.com/alphagov/forms-prototypes/tree/main/app/views/form-designer)
+Form designer views: [/app/views/form-designer](https://github.com/govuk-forms/forms-prototypes/tree/main/app/views/form-designer)

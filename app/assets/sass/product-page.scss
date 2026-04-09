@@ -63,9 +63,10 @@ div.feature-panel {
 }
 // scss-lint:enable IdSelector
 .hero-alternative-action {
-  @include govuk-font($size: 19);
   margin-bottom: govuk-spacing(3);
   position: relative;
+
+  @include govuk-font($size: 19);
 }
 
 .hero-breadcrumb-banner {
@@ -102,9 +103,10 @@ div.feature-panel {
 }
 // scss-lint:enable IdSelector
 .hero-alternative-action {
-  @include govuk-font($size: 19);
   margin-bottom: govuk-spacing(3);
   position: relative;
+
+  @include govuk-font($size: 19);
 }
 
 .hero-breadcrumb-banner {

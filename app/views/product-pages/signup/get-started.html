@@ -6,18 +6,11 @@
 {% endblock %}
 
 {% block header %}
-{% set productNameHtml %}
-          Forms
-          <strong class="govuk-tag govuk-phase-banner__content__tag">
-            beta
-          </strong>
-{% endset %}
-
 {{ govukHeader({
   rebrand: false,
 
   homepageUrl: "/product-pages/signup/",
-  productName: productNameHtml | safe
+  productName: "Forms"
 }) }}
 
 {% set signInNavigationItemHtml %}

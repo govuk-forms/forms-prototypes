@@ -16,10 +16,11 @@
 // </span>
 
 .hero-alternative-action {
-  @include govuk-font($size: 19);
   margin-bottom: govuk-spacing(3);
   position: relative;
   display: inline-block;
+
+  @include govuk-font($size: 19);
 
   @include govuk-media-query(tablet) {
     white-space: nowrap;

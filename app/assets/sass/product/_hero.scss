@@ -68,13 +68,13 @@
   }
 
   &__description {
-    @include govuk-font($size: 24);
     color: govuk-colour("white");
+    @include govuk-font($size: 24);
   }
 
   &__paragraph {
-    @include govuk-font($size: 19);
     color: govuk-colour("white");
+    @include govuk-font($size: 19);
   }
 
   &__title,

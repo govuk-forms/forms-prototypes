@@ -18,9 +18,9 @@ $task-list-indent: 35px;
 
 .task-list__heading {
   display: table;
+  padding-bottom: govuk-spacing(1);
 
   @include govuk-font($size: 24, $weight: bold);
-  padding-bottom: govuk-spacing(1);
 }
 
 .task-list-section-number {

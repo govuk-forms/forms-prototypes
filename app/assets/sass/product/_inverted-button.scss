@@ -28,6 +28,6 @@ $app-button-inverted-hover-background-colour: govuk-tint($app-button-inverted-fo
   color: $app-button-inverted-foreground-colour;
   background-color: $app-button-inverted-hover-background-colour;
   box-shadow: inset 0 0 0 2px $govuk-focus-colour;
-  text-underline: #0b0c0c;
+  text-underline: $govuk-focus-text-colour;
   text-decoration-line: underline;
 }

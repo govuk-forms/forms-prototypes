@@ -23,8 +23,10 @@
   rebrand: false,
 
   homepageUrl: "/product-pages/basic/",
-  productName: productNameHtml | safe,
+  productName: productNameHtml | safe
+}) }}
 
+{{ govukServiceNavigation({
   navigation: [
     { text: "Features", href: "features" },
     { text: "Support", href: "support" }

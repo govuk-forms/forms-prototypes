@@ -23,14 +23,26 @@
   rebrand: false,
 
   homepageUrl: "/product-pages/org-admin",
-  productName: productNameHtml | safe,
+  productName: productNameHtml | safe
+}) }}
 
+{% set signInNavigationItemHtml %}
+              <li class="govuk-service-navigation__item app-service-navigation__item app-service-navigation__item--featured">
+                <a class="govuk-service-navigation__link" href="https://admin.research.forms.service.gov.uk">
+                  Sign in
+                </a>
+              </li>
+{% endset %}
+
+{{ govukServiceNavigation({
   navigation: [
     { text: "Get started", href: "get-started" },
     { text: "Features", href: "features" },
-    { text: "Support", href: "support" },
-    { text: "Sign in", href: "https://admin.research.forms.service.gov.uk/" }
-  ]
+    { text: "Support", href: "support" }
+  ],
+  slots: {
+    navigationEnd: signInNavigationItemHtml
+  }
 }) }}
 
 <div class="hero-breadcrumb-banner">

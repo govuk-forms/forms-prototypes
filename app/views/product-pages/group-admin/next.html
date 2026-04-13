@@ -5,12 +5,14 @@
   <link href="/public/stylesheets/product-page.css" rel="stylesheet" type="text/css">
 {% endblock %}
 
-{% block header %}
+{% block govukHeader %}
 {{ govukHeader({
   homepageUrl: "/product-pages/group-admin/",
   productName: "Forms"
 }) }}
+{% endblock %}
 
+{% block govukServiceNavigation %}
 {% set signInNavigationItemHtml %}
               <li class="govuk-service-navigation__item app-service-navigation__item app-service-navigation__item--featured">
                 <a class="govuk-service-navigation__link" href="https://admin.research.forms.service.gov.uk">
@@ -29,7 +31,7 @@
     navigationEnd: signInNavigationItemHtml
   }
 }) }}
-{% endblock header %}
+{% endblock %}
 
 
 {% block content %}

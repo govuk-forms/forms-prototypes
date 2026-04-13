@@ -11,12 +11,14 @@
 {{ pageTitle }}
 {% endblock %}
 
-{% block header %}
+{% block govukHeader %}
 {{ govukHeader({
   homepageUrl: "/product-pages/signup/",
   productName: "Forms"
 }) }}
+{% endblock %}
 
+{% block govukServiceNavigation %}
 {% set signInNavigationItemHtml %}
               <li class="govuk-service-navigation__item app-service-navigation__item app-service-navigation__item--featured">
                 <a class="govuk-service-navigation__link" href="https://admin.research.forms.service.gov.uk">
@@ -36,9 +38,9 @@
     navigationEnd: signInNavigationItemHtml
   }
 }) }}
-{% endblock header %}
+{% endblock %}
 
-{% block main %}
+{% block container %}
 <div class="masthead">
   <div class="hero">
     <div class="hero__content">
@@ -202,4 +204,4 @@
     </div>
   </div>
 </div>
-{% endblock main %}
+{% endblock container %}

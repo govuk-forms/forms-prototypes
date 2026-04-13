@@ -4,8 +4,11 @@
     Email address verified
 {% endblock %}
 
-{% block header %}
+{% block govukHeader %}
     {{ govukHeader() }}
+{% endblock %}
+
+{% block govukServiceNavigation %}
     {% include "includes/submenu.html" %}
 {% endblock %}
 

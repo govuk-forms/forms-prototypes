@@ -9,7 +9,7 @@
   }
 
   &__item {
-    border-bottom: 1px $govuk-border-colour solid;
+    border-bottom: 1px govuk-functional-colour(border) solid;
     display: block;
     padding: govuk-spacing(2) 0;
 
@@ -34,7 +34,7 @@
 
     a:link,
     a:visited {
-      color: $govuk-text-colour;
+      color: govuk-functional-colour(text);
     }
   }
 }

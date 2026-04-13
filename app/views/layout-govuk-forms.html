@@ -1,12 +1,15 @@
 {% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
 
-{% block header %}
+{% block govukHeader %}
   {{ govukHeader({
     homepageUrl: "/",
     productName: "Forms",
     serviceUrl: "/",
     containerClasses: "govuk-width-container"
   }) }}
+{% endblock %}
+
+{% block govukServiceNavigation %}
   {{ govukServiceNavigation({
   navigationClasses: "app-service-navigation",
     navigation: [
@@ -61,7 +64,7 @@
   ] %}
 {% endif %}
 
-{% block footer %}
+{% block govukFooter %}
   {{ govukFooter({
     meta: {
       items: formsFooterItems

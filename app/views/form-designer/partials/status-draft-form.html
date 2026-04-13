@@ -48,7 +48,7 @@
 {% if data.isQuestionsComplete === "yes" %}
     {% set questionStatusText = "Completed" %}
 {% elif data.pages.length %}
-    {% set questionStatusTag = "govuk-tag--light-blue" %}
+    {% set questionStatusTag = "govuk-tag--teal" %}
     {% set questionStatusText = "In progress" %}
 {% else %}
     {% set questionStatusTag = "govuk-tag--blue" %}
@@ -68,7 +68,7 @@
 {% if data.isDeclarationComplete === "yes" %}
     {% set declarationStatusText = "Completed" %}
 {% elif data.isDeclarationComplete === "no" and data.checkAnswersDeclaration != "" %}
-    {% set declarationStatusTag = "govuk-tag--light-blue" %}
+    {% set declarationStatusTag = "govuk-tag--teal" %}
     {% set declarationStatusText = "In progress" %}
 {% else %}
     {% set declarationStatusTag = "govuk-tag--blue" %}
@@ -182,7 +182,7 @@
     {% set submissionEmailStatusTag = "govuk-tag--blue" %}
     {% set submissionEmailStatusText = "Not started" %}
 {% elif (data.formsEmail and (not data.confirmationCode)) or data.currentFormsEmail %}
-    {% set submissionEmailStatusTag = "govuk-tag--light-blue" %}
+    {% set submissionEmailStatusTag = "govuk-tag--teal" %}
     {% set submissionEmailStatusText = "In progress" %}
 {% else %}
     {% set submissionEmailStatusText = "Completed" %}
@@ -354,7 +354,7 @@
 {% if data.markWelshComplete and (data.markWelshComplete == "yes") %}
     {% set welshVersionStatusText = "Completed" %}
 {% elif data.markWelshComplete and (data.markWelshComplete == "no") %}
-    {% set welshVersionStatusTag = "govuk-tag--light-blue" %}
+    {% set welshVersionStatusTag = "govuk-tag--teal" %}
     {% set welshVersionStatusText = "In progress" %}
 {% else %}
     {% set welshVersionStatusTag = "govuk-task-list__status--cannot-start-yet" %}
@@ -446,7 +446,7 @@
                 text: "Completed" if data.sharePreview == "yes",
                 tag: {
                     text: "Not started" if data.sharePreview != "no" else "In progress",
-                    classes: "govuk-tag--blue" if data.sharePreview != "no" else "govuk-tag--light-blue"
+                    classes: "govuk-tag--blue" if data.sharePreview != "no" else "govuk-tag--teal"
                 } if data.sharePreview != "yes"
             }
         },

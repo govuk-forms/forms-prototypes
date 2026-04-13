@@ -11,12 +11,14 @@
 {{ pageTitle }}
 {% endblock %}
 
-{% block header %}
+{% block govukHeader %}
 {{ govukHeader({
   homepageUrl: "/product-pages/basic/",
   productName: "Forms"
 }) }}
+{% endblock %}
 
+{% block govukServiceNavigation %}
 {{ govukServiceNavigation({
   classes: "govuk-service-navigation--inverse",
   navigation: [
@@ -24,9 +26,9 @@
     { text: "Support", href: "support" }
   ]
 }) }}
-{% endblock header %}
+{% endblock %}
 
-{% block main %}
+{% block container %}
 <div class="masthead">
   <div class="hero">
     <div class="hero__content">
@@ -183,4 +185,4 @@
     </div>
   </div>
 </div>
-{% endblock main %}
+{% endblock container %}

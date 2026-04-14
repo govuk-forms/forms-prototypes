@@ -2,14 +2,14 @@
 
 {% block head %}{% endblock %}
 
-{% block skipLink %}{% endblock %}
+{% block govukSkipLink %}{% endblock %}
 
-{% block header %}
+{% block govukHeader %}
   {{ govukHeader({
     homepageUrl: "#",
     serviceName: data["formTitle"],
     containerClasses: "govuk-width-container",
-    navigationClasses: "govuk-header__navigation--end govuk-!-display-block",
+    navigationClasses: "govuk-!-display-block",
     classes: "app-preview-header-container"
   }) }}
 {% endblock %}

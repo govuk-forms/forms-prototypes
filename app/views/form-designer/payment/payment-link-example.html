@@ -4,7 +4,7 @@
 {% set pageTitle = "Pay for " + (data.formTitle | lower or "[paymentLinkTitle]") %}
 {% set serviceName = pageTitle %}
 
-{% block header %}
+{% block govukHeader %}
   {{ govukHeader({
     homepageUrl: "/",
     serviceName: pageTitle,

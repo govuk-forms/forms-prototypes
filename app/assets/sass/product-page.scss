@@ -71,7 +71,7 @@ div.feature-panel {
 }
 
 .hero-breadcrumb-banner {
-  background-color: $govuk-brand-colour;
+  background-color: govuk-functional-colour(brand);
 }
 
 @media (max-width: 732px) {
@@ -111,7 +111,7 @@ div.feature-panel {
 }
 
 .hero-breadcrumb-banner {
-  background-color: $govuk-brand-colour;
+  background-color: govuk-functional-colour(brand);
 }
 
 #main-content.govuk-main-wrapper-evaluate {
@@ -125,7 +125,7 @@ div.feature-panel {
   }
 
   .sub-navigation__item:last-child {
-    border-bottom: 1px $govuk-border-colour solid;
+    border-bottom: 1px govuk-functional-colour(border) solid;
   }
 
   .sub_navigation_list_1 .sub-navigation__item {
@@ -146,7 +146,7 @@ div.feature-panel {
   }
 
   .evaluate-contact-us-decide {
-    border-top: 1px $govuk-border-colour solid;
+    border-top: 1px govuk-functional-colour(border) solid;
     padding-top: 40px;
   }
 
@@ -157,7 +157,7 @@ div.feature-panel {
   .evaluate-border-bottom-paragraph-decide {
     padding-bottom: 45px;
     margin-bottom: 35px;
-    border-bottom: 1px $govuk-border-colour solid;
+    border-bottom: 1px govuk-functional-colour(border) solid;
   }
 }
 

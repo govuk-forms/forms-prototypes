@@ -5,19 +5,21 @@
   <link href="/public/stylesheets/product-page.css" rel="stylesheet" type="text/css">
 {% endblock %}
 
-{% block header %}
+{% block govukHeader %}
 {{ govukHeader({
   homepageUrl: "/product-pages/basic/",
   productName: "Forms"
 }) }}
+{% endblock %}
 
+{% block govukServiceNavigation %}
 {{ govukServiceNavigation({
   navigation: [
     { text: "Features", href: "features", active: true },
     { text: "Support", href: "support" }
   ]
 }) }}
-{% endblock header %}
+{% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">

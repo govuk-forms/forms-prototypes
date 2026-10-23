@@ -5,6 +5,9 @@
     "start": "govuk-prototype-kit start"
   },
   "name": "govuk-prototype-kit",
+  "engines": {
+    "node": "22.23.4"
+  },
   "dependencies": {
     "@govuk-prototype-kit/common-templates": "3.0.0",
     "@govuk-prototype-kit/step-by-step": "3.0.0",
